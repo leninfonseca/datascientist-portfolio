@@ -1,277 +1,227 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lenin Fonseca | Junior Data Scientist</title>
-  <meta name="description" content="Portfolio profesional de Lenin Fonseca con proyectos de Data Science, SQL, software orientado a datos y experiencia técnica en laboratorio, calibración y metrología.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio de Lenin Fonseca — Data Engineering con Azure, Microsoft Fabric, Databricks, SQL, Python y arquitecturas Lakehouse.">
+  <meta name="theme-color" content="#0a0a0a">
+  <title>Lenin Fonseca — Data Engineering</title>
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
+  <div class="noise" aria-hidden="true"></div>
+
   <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="#top">Lenin Fonseca</a>
-      <nav class="site-nav">
-        <a href="#projects">Proyectos</a>
-        <a href="#profile">Perfil</a>
-        <a href="#about">Sobre mí</a>
-        <a href="#contact">Contacto</a>
-      </nav>
-    </div>
+    <a class="mark" href="#top" aria-label="Inicio"><span class="mark-dot"></span><span>LF / DATA</span></a>
+    <nav class="nav" aria-label="Navegación principal">
+      <a href="#projects">Proyectos</a><a href="#profile">Perfil</a><a href="#stack">Stack</a><a href="#contact">Contacto</a>
+    </nav>
+    <span class="header-meta">Data Engineering · Barcelona</span>
   </header>
 
   <main id="top">
-    <section class="hero section">
-      <div class="container hero-grid">
-        <div class="hero-copy card card-hero">
-          <span class="kicker">Junior Data Scientist · Analytics · SQL · Technical Systems</span>
-          <h1>Data Science con base técnica real y experiencia operativa en laboratorio.</h1>
-          <p class="lead">
-            Soy Lenin Fonseca. Estoy orientando mi carrera hacia Data Science y Analytics desde una experiencia previa sólida en calibración, metrología, trazabilidad y automatización. En mi puesto más reciente he coordinado la operativa de dos laboratorios y he desarrollado mejoras internas con Python y SQLite, combinando análisis, documentación técnica y resolución de problemas en entornos reales.
-          </p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#projects">Ver proyectos</a>
-            <a class="button button-secondary" href="https://github.com/vlasted" target="_blank" rel="noreferrer">GitHub</a>
-            <a class="button button-secondary" href="https://www.linkedin.com/in/lenin-sebastian-f-4814762a4" target="_blank" rel="noreferrer">LinkedIn</a>
-          </div>
-        </div>
-
-        <aside class="hero-aside">
-          <article class="card summary-card">
-            <span class="eyebrow">Experiencia reciente</span>
-            <h2>Responsable de laboratorios / instrumentación</h2>
-            <p>
-              Gestión operativa de dos laboratorios, coordinación de cargas, calibración y verificación de instrumentación, cumplimiento de procedimientos de calidad y mejoras de trazabilidad con Python y SQLite.
-            </p>
-          </article>
-          <article class="card summary-card">
-            <span class="eyebrow">Enfoque</span>
-            <h2>Proyectos orientados a impacto y ejecución</h2>
-            <p>
-              Mi objetivo es construir soluciones medibles: datasets bien trabajados, métricas claras, documentación reproducible y utilidad real para negocio, análisis u operación.
-            </p>
-          </article>
-        </aside>
+    <section class="credentials" aria-label="Certificaciones Microsoft">
+      <div class="credentials-brand">
+        <img src="assets/icons/microsoft.svg" alt="Microsoft">
+        <span>Microsoft Credentials</span>
       </div>
-    </section>
 
-    <section id="projects" class="section">
-      <div class="container">
-        <div class="section-heading">
-          <span class="section-label">Proyectos</span>
-          <h2>Cuatro proyectos seleccionados</h2>
-          <p>
-            Tres proyectos de datos pensados para un perfil junior sólido y un proyecto técnico de software con base de datos real.
-          </p>
+      <div class="credential credential-current">
+        <img
+          class="credential-badge"
+          src="https://learn.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-fundamentals-badge.svg"
+          alt="Microsoft Certified Fundamentals"
+          loading="lazy">
+        <div class="credential-copy">
+          <div class="credential-code">
+            <strong>DP-900</strong>
+            <span class="credential-product">Azure</span>
+          </div>
+          <span>Azure Data Fundamentals</span>
         </div>
+      </div>
 
-        <div class="projects-grid">
-          <article class="card project-card">
-            <span class="project-index">Proyecto 01</span>
-            <h3>Credit Risk Scoring &amp; Expected Loss</h3>
-            <p>
-              Proyecto end-to-end orientado a scoring de riesgo y estimación de expected loss. Incluye limpieza de datos, análisis exploratorio, feature engineering, baseline, comparación de modelos y lectura de resultados para apoyar decisiones de negocio.
-            </p>
-            <div class="tag-list">
-              <span>Python</span>
-              <span>pandas</span>
-              <span>scikit-learn</span>
-              <span>XGBoost</span>
-              <span>Risk Analytics</span>
-            </div>
-            <div class="project-links">
-              <a href="#contact">Disponible bajo petición</a>
-            </div>
-          </article>
+      <div class="credential credential-progress">
+        <img
+          class="credential-badge"
+          src="https://learn.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-associate-badge.svg"
+          alt="Microsoft Certified Associate"
+          loading="lazy">
+        <div class="credential-copy">
+          <div class="credential-code">
+            <strong>DP-700</strong>
+            <span class="credential-product">Fabric</span>
+          </div>
+          <span>Fabric Data Engineer Associate</span>
+          <em>In progress</em>
+        </div>
+      </div>
 
-          <article class="card project-card">
-            <span class="project-index">Proyecto 02</span>
-            <h3>SQL Analytics Dashboard</h3>
-            <p>
-              Pipeline de analítica con base de datos, consultas SQL, métricas clave y dashboard ejecutivo. Diseñado para mostrar una línea híbrida entre Data Analyst y Data Scientist Junior, con foco en KPIs, reporting y visualización.
-            </p>
-            <div class="tag-list">
-              <span>SQL</span>
-              <span>PostgreSQL</span>
-              <span>Python</span>
-              <span>Plotly</span>
-              <span>Streamlit</span>
-            </div>
-            <div class="project-links">
-              <a href="#contact">Disponible bajo petición</a>
-            </div>
-          </article>
-
-          <article class="card project-card">
-            <span class="project-index">Proyecto 03</span>
-            <h3>Trade Journal &amp; Risk Analytics</h3>
-            <p>
-              Sistema de analítica aplicado a gestión de capitales, centrado en medir consistencia, disciplina y rendimiento. Analiza métricas como expectancy, drawdown, MAE/MFE, sesgos por sesión y cumplimiento de reglas.
-            </p>
-            <div class="tag-list">
-              <span>Python</span>
-              <span>PostgreSQL</span>
-              <span>Plotly</span>
-              <span>Risk Metrics</span>
-              <span>Data Modeling</span>
-            </div>
-            <div class="project-links">
-              <a href="#contact">Disponible bajo petición</a>
-            </div>
-          </article>
-
-          <article class="card project-card">
-            <span class="project-index">Proyecto 04</span>
-            <h3>Lead Intelligence Manager</h3>
-            <p>
-              Aplicación local para validar, clasificar y hacer seguimiento de leads comerciales. Desarrollada con Java, JDBC, MySQL y XML/XSD, con arquitectura por capas, CRUD real y documentación por módulos.
-            </p>
-            <div class="tag-list">
-              <span>Java</span>
-              <span>JDBC</span>
-              <span>MySQL</span>
-              <span>XML/XSD</span>
-              <span>Desktop App</span>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/vlasted/lead-intelligence-manager" target="_blank" rel="noreferrer">Ver repositorio</a>
-            </div>
-          </article>
+      <div class="credential credential-progress">
+        <img
+          class="credential-badge"
+          src="https://learn.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-associate-badge.svg"
+          alt="Microsoft Certified Associate"
+          loading="lazy">
+        <div class="credential-copy">
+          <div class="credential-code">
+            <strong>DP-600</strong>
+            <span class="credential-product">Fabric</span>
+          </div>
+          <span>Fabric Analytics Engineer Associate</span>
+          <em>In progress</em>
         </div>
       </div>
     </section>
 
-    <section id="profile" class="section section-alt">
-      <div class="container">
-        <div class="section-heading">
-          <span class="section-label">Perfil</span>
-          <h2>Formación y experiencia reciente</h2>
-          <p>
-            La combinación entre formación en desarrollo y ciencia de datos y experiencia técnica real en laboratorio define el enfoque de este perfil.
-          </p>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="kicker">Azure Data Engineering · Microsoft Fabric · Barcelona</p>
+        <h1>Arquitectura y plataformas de datos <span>orientadas a fiabilidad, trazabilidad y escala.</span></h1>
+        <p class="hero-lead">Portfolio centrado en ingeniería de datos end-to-end: ingesta, transformación, modelado, procesamiento batch y streaming, calidad, observabilidad y consumo analítico sobre Azure y Microsoft Fabric.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">Ver proyectos</a>
+          <a class="btn btn-cv" href="assets/cv/Lenin_Fonseca_CV.pdf" download>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v11m0 0 4-4m-4 4-4-4M5 17v3h14v-3"/></svg>
+            Descargar CV
+          </a>
+          <a class="btn btn-quiet" href="https://www.leninfonseca.com" target="_blank" rel="noreferrer">leninfonseca.com ↗</a>
+        </div>
+      </div>
+
+      <aside class="hero-panel" aria-label="Resumen profesional">
+        <div class="signal-row"><span class="signal-label">Experiencia actual</span><strong>Responsable de operación de 2 laboratorios técnicos</strong></div>
+        <div class="signal-row"><span class="signal-label">Automatización</span><strong>Python · SQLite · trazabilidad · adquisición de datos</strong></div>
+        <div class="signal-row"><span class="signal-label">Especialización</span><strong>Azure · Fabric · Databricks · Data Pipelines</strong></div>
+        <div class="signal-row"><span class="signal-label">Formación</span><strong>FP Superior DAM · Ingeniería de datos</strong></div>
+        <div class="micro-pipeline" aria-hidden="true"><span>source</span><i></i><span>ingest</span><i></i><span>transform</span><i></i><span>serve</span></div>
+      </aside>
+    </section>
+
+    <section class="section intro" id="projects">
+      <div class="section-heading"><p class="eyebrow">Selected work</p><h2>Proyectos diseñados alrededor de problemas y arquitecturas de datos reales.</h2></div>
+      <p class="section-copy">La selección cubre procesamiento batch y streaming, arquitectura Lakehouse, modelado dimensional, Microsoft Fabric, gobierno, calidad y DataOps. Cada proyecto documenta decisiones técnicas, flujo de datos, operación y criterios de diseño.</p>
+    </section>
+
+    <section class="project-list" aria-label="Proyectos de Data Engineering">
+      <article class="project project-featured">
+        <div class="project-index">01</div>
+        <div class="project-main">
+          <div class="project-title-row"><div><p class="project-type">Azure · Batch · Lakehouse · Open Data</p><h3>Barcelona Urban Mobility Data Platform</h3></div><span class="status">End-to-end</span></div>
+          <p class="project-summary">Plataforma de datos para integrar fuentes públicas de movilidad, meteorología e incidencias mediante cargas históricas e incrementales, transformarlas sobre una arquitectura Medallion y publicar capas analíticas consistentes.</p>
+          <div class="architecture" aria-label="Arquitectura del proyecto"><span>APIs / CSV / JSON</span><b>→</b><span>Azure Data Factory</span><b>→</b><span>ADLS / Delta</span><b>→</b><span>Databricks + PySpark</span><b>→</b><span>Fabric / SQL / BI</span></div>
+          <div class="project-details"><div><span>Ingesta</span><p>Full load inicial, cargas incrementales, watermarks, control de duplicados y evolución de esquema.</p></div><div><span>Procesamiento</span><p>Bronze, Silver y Gold con Delta MERGE, particionado, validaciones y transformaciones PySpark.</p></div><div><span>Operación</span><p>Monitorización de ejecuciones, retries, calidad de datos, trazabilidad y preparación para consumo analítico.</p></div></div>
+          <div class="project-footer"><div class="tech"><span>ADF</span><span>ADLS</span><span>Databricks</span><span>PySpark</span><span>Delta Lake</span><span>Fabric</span><span>SQL</span></div><div class="project-links"><a href="#">Repositorio ↗</a><a href="#">Arquitectura ↗</a></div></div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-index">02</div>
+        <div class="project-main">
+          <div class="project-title-row"><div><p class="project-type">Fabric · Dimensional Modeling · Customer 360</p><h3>Customer 360 &amp; Revenue Data Product</h3></div><span class="status">Enterprise data</span></div>
+          <p class="project-summary">Producto de datos orientado a integrar clientes, pedidos, facturación, suscripciones y soporte en una plataforma analítica común, con historial de cambios y un modelo dimensional preparado para reporting y análisis.</p>
+          <div class="architecture architecture-short"><span>CRM / Orders / Billing / Support</span><b>→</b><span>CDC / Watermarks</span><b>→</b><span>OneLake / Lakehouse</span><b>→</b><span>Warehouse</span><b>→</b><span>Semantic Model</span></div>
+          <div class="project-details"><div><span>Modelado</span><p>Star schema, granularidad definida, claves surrogate, dimensiones conformadas y SCD Type 2.</p></div><div><span>Plataforma</span><p>Lakehouse y Warehouse con responsabilidades diferenciadas, capas Gold y cargas incrementales.</p></div><div><span>Consumo</span><p>Modelo semántico en Fabric, Direct Lake, RLS y métricas de negocio sobre una única versión del dato.</p></div></div>
+          <div class="project-footer"><div class="tech"><span>Fabric</span><span>OneLake</span><span>Lakehouse</span><span>Warehouse</span><span>SQL</span><span>Direct Lake</span><span>Power BI</span></div><div class="project-links"><a href="#">Repositorio ↗</a><a href="#">Modelo de datos ↗</a></div></div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-index">03</div>
+        <div class="project-main">
+          <div class="project-title-row"><div><p class="project-type">Streaming · Events · KQL · Real-Time</p><h3>Real-Time Operations Intelligence Platform</h3></div><span class="status">Event-driven</span></div>
+          <p class="project-summary">Arquitectura orientada a eventos para procesar actividad operacional en baja latencia, conservar el histórico y exponer indicadores casi en tiempo real mediante consultas temporales y alertas.</p>
+          <div class="architecture architecture-short"><span>Event Source</span><b>→</b><span>Event Hubs / Eventstream</span><b>→</b><span>Eventhouse</span><b>→</b><span>KQL</span><b>→</b><span>Real-Time Dashboard</span></div>
+          <div class="project-details"><div><span>Streaming</span><p>Eventos continuos, ventanas temporales, eventos tardíos y agregaciones sobre tiempo de evento.</p></div><div><span>Operación</span><p>Seguimiento de latencia, errores, reintentos, throughput y comportamiento ante picos de carga.</p></div><div><span>Analítica</span><p>Consultas KQL, detección de anomalías operativas y métricas listas para visualización y alertado.</p></div></div>
+          <div class="project-footer"><div class="tech"><span>Event Hubs</span><span>Eventstream</span><span>Eventhouse</span><span>KQL</span><span>Fabric</span><span>Streaming</span></div><div class="project-links"><a href="#">Repositorio ↗</a><a href="#">Arquitectura ↗</a></div></div>
+        </div>
+      </article>
+
+      <article class="project project-muted">
+        <div class="project-index">04</div>
+        <div class="project-main">
+          <div class="project-title-row"><div><p class="project-type">Governance · Data Quality · Observability · DataOps</p><h3>Data Reliability, Governance &amp; DataOps Platform</h3></div><span class="status status-alt">Platform engineering</span></div>
+          <p class="project-summary">Capa transversal para controlar calidad, seguridad, trazabilidad y ciclo de vida de los datos, con validaciones automatizadas, observabilidad de pipelines y despliegues reproducibles entre entornos.</p>
+          <div class="architecture architecture-short"><span>Data Contracts</span><b>→</b><span>Validation</span><b>→</b><span>Audit / Lineage</span><b>→</b><span>CI/CD</span><b>→</b><span>Monitoring / Alerts</span></div>
+          <div class="project-details"><div><span>Calidad</span><p>Schema checks, nulls, duplicados, rangos, volumen, frescura y registro histórico de incidencias.</p></div><div><span>Gobierno</span><p>RBAC, RLS/OLS, masking de PII, lineage, data contracts y separación de responsabilidades.</p></div><div><span>DataOps</span><p>Git, pull requests, CI/CD, deployment pipelines, retries, métricas operativas y criterios de rollback.</p></div></div>
+          <div class="project-footer"><div class="tech"><span>Python</span><span>SQL</span><span>Fabric</span><span>Git</span><span>CI/CD</span><span>Data Quality</span><span>Governance</span></div><div class="project-links"><a href="#">Repositorio ↗</a><a href="#">Runbook ↗</a></div></div>
+        </div>
+      </article>
+    </section>
+
+    <section class="section profile" id="profile">
+      <div class="section-heading"><p class="eyebrow">Profile</p><h2>Experiencia técnica aplicada a ingeniería de datos.</h2></div>
+      <div class="profile-grid">
+        <div class="profile-copy"><p>Actualmente soy responsable de la operación de dos laboratorios de instrumentación y metrología, donde coordino cargas de trabajo y he desarrollado soluciones internas con Python y SQLite para trazabilidad, registro de equipos, automatización documental y adquisición estructurada de datos.</p><p>Paralelamente curso el Grado Superior en Desarrollo de Aplicaciones Multiplataforma y formación especializada en datos, con una orientación profesional hacia Data Engineering en el ecosistema Microsoft Azure y Fabric.</p></div>
+        <dl class="profile-facts"><div><dt>Ubicación</dt><dd>Barcelona, España</dd></div><div><dt>Especialización</dt><dd>Azure Data Engineering</dd></div><div><dt>Formación</dt><dd>FP Superior DAM · Data</dd></div><div><dt>Experiencia</dt><dd>Operación técnica · Automatización · Trazabilidad</dd></div></dl>
+      </div>
+    </section>
+
+    <section class="section stack" id="stack">
+      <div class="section-heading">
+        <p class="eyebrow">Toolbox</p>
+        <h2>Tecnologías y conceptos aplicados en los proyectos.</h2>
+      </div>
+
+      <div class="stack-board">
+        <div class="stack-group">
+          <div class="stack-head">
+            <span>Languages &amp; Query</span>
+          </div>
+          <div class="stack-item"><img class="stack-icon" src="https://cdn.simpleicons.org/python" alt="Python" loading="lazy" onerror="this.style.display='none'"><strong>Python</strong></div>
+          <div class="stack-item"><strong>SQL</strong></div>
+          <div class="stack-item"><strong>KQL</strong></div>
         </div>
 
-        <div class="split-grid">
-          <article class="card content-card">
-            <h3>Formación académica y especializada</h3>
-            <ul class="clean-list">
-              <li>
-                <strong>Grado Superior en Desarrollo de Aplicaciones Multiplataforma</strong>
-                <span>thePower</span>
-              </li>
-              <li>
-                <strong>Máster en Data Scientist, Business Intelligence &amp; Machine Learning</strong>
-                <span>A2Capacitación</span>
-              </li>
-              <li>
-                <strong>Formación complementaria en Data Science</strong>
-                <span>A2Capacitación</span>
-              </li>
-              <li>
-                <strong>Programa práctico de Python, Machine Learning y Negocio</strong>
-                <span>JYTS</span>
-              </li>
-            </ul>
-          </article>
+        <div class="stack-group">
+          <div class="stack-head">
+            <img class="stack-icon" src="https://cdn.simpleicons.org/microsoftazure" alt="Microsoft Azure" loading="lazy" onerror="this.style.display='none'">
+            <span>Azure Platform</span>
+          </div>
+          <div class="stack-item"><img class="stack-icon" src="https://static.docs.com/ui/media/product/azure/data-factory.svg" alt="Azure Data Factory" loading="lazy" onerror="this.style.display='none'"><strong>Data Factory</strong></div>
+          <div class="stack-item"><img class="stack-icon" src="https://static.docs.com/ui/media/product/azure/storage-accounts.svg" alt="Azure Data Lake Storage Gen2" loading="lazy" onerror="this.style.display='none'"><strong>ADLS Gen2</strong></div>
+          <div class="stack-item"><img class="stack-icon" src="https://static.docs.com/ui/media/product/azure/sql-database.svg" alt="Azure SQL Database" loading="lazy" onerror="this.style.display='none'"><strong>Azure SQL</strong></div>
+        </div>
 
-          <article class="card content-card">
-            <h3>Último puesto resumido</h3>
-            <p>
-              En mi experiencia más reciente he sido responsable de la gestión operativa de dos laboratorios, coordinando cargas, procedimientos y control de calidad en entornos de calibración y metrología. Además de la parte técnica, he impulsado mejoras internas de trazabilidad y automatización con Python y SQLite, así como flujos de documentación y registro estructurado de datos.
-            </p>
-            <ul class="clean-list compact">
-              <li>Coordinación operativa de laboratorios e instrumentación.</li>
-              <li>Calibración y verificación con equipos como Fluke, DewK y HBK/QuantumX.</li>
-              <li>Automatización documental y control de datos para trazabilidad.</li>
-            </ul>
-          </article>
+        <div class="stack-group">
+          <div class="stack-head">
+            <span>Processing</span>
+          </div>
+          <div class="stack-item"><img class="stack-icon" src="https://static.docs.com/ui/media/product/azure/databricks.svg" alt="Azure Databricks" loading="lazy" onerror="this.style.display='none'"><strong>Databricks</strong></div>
+          <div class="stack-item"><img class="stack-icon" src="https://cdn.simpleicons.org/apachespark" alt="Apache Spark" loading="lazy" onerror="this.style.display='none'"><strong>PySpark / Spark</strong></div>
+          <div class="stack-item"><strong>Delta Lake</strong></div>
+        </div>
+
+        <div class="stack-group">
+          <div class="stack-head">
+            <img class="stack-icon" src="https://debruyn.dev/2026/all-microsoft-fabric-icons-for-diagramming-2026-edition/fabric.svg" alt="Microsoft Fabric" loading="lazy" onerror="this.style.display='none'">
+            <span>Microsoft Fabric</span>
+          </div>
+          <div class="stack-item"><img class="stack-icon" src="https://debruyn.dev/2026/all-microsoft-fabric-icons-for-diagramming-2026-edition/one_lake.svg" alt="Microsoft OneLake" loading="lazy" onerror="this.style.display='none'"><strong>OneLake</strong></div>
+          <div class="stack-item"><strong>Lakehouse</strong></div>
+          <div class="stack-item"><strong>Warehouse</strong></div>
+          <div class="stack-item"><img class="stack-icon" src="https://static.docs.com/ui/media/product/azure/power-bi.svg" alt="Power BI" loading="lazy" onerror="this.style.display='none'"><strong>Power BI / Direct Lake</strong></div>
+        </div>
+
+        <div class="stack-group">
+          <div class="stack-head">
+            <span>Engineering</span>
+          </div>
+          <div class="stack-item"><strong>ETL / ELT</strong></div>
+          <div class="stack-item"><img class="stack-icon" src="https://cdn.simpleicons.org/git" alt="Git" loading="lazy" onerror="this.style.display='none'"><strong>Git / CI-CD</strong></div>
+          <div class="stack-item"><strong>Data Quality</strong></div>
+          <div class="stack-item"><strong>Observability</strong></div>
         </div>
       </div>
     </section>
 
-    <section id="about" class="section">
-      <div class="container two-column-layout">
-        <div>
-          <div class="section-heading section-heading-left">
-            <span class="section-label">Sobre mí</span>
-            <h2>Perfil orientado a datos con mentalidad técnica y de ejecución</h2>
-          </div>
-          <div class="card content-card">
-            <p>
-              Mi interés está en proyectos donde los datos no se queden en un notebook, sino que ayuden a entender mejor un proceso, mejorar una operación o construir una herramienta útil. Por eso mis proyectos buscan mantener una línea clara: problema definido, datos trabajados con criterio, comparación de enfoques, métricas comprensibles y documentación reproducible.
-            </p>
-            <p>
-              Me siento especialmente cómodo en trabajos que mezclan análisis, bases de datos, automatización, visualización y contexto técnico. Esa combinación es la que quiero seguir desarrollando en mi transición hacia Data Science y Analytics.
-            </p>
-          </div>
-        </div>
-
-        <div>
-          <div class="section-heading section-heading-left">
-            <span class="section-label">Stack</span>
-            <h2>Herramientas principales</h2>
-          </div>
-          <div class="stack-grid">
-            <article class="card stack-card">
-              <h3>Data</h3>
-              <p>Python, pandas, NumPy, scikit-learn, statsmodels</p>
-            </article>
-            <article class="card stack-card">
-              <h3>Bases de datos</h3>
-              <p>SQL, PostgreSQL, MySQL, SQLite</p>
-            </article>
-            <article class="card stack-card">
-              <h3>Visualización</h3>
-              <p>Plotly, Streamlit, dashboards interactivos</p>
-            </article>
-            <article class="card stack-card">
-              <h3>Software</h3>
-              <p>Java, JDBC, XML/XSD, Git, GitHub</p>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section section-alt">
-      <div class="container">
-        <div class="section-heading">
-          <span class="section-label">Contacto</span>
-          <h2>Información profesional</h2>
-          <p>
-            Disponible para oportunidades junior en Data Science, Analytics o roles híbridos orientados a datos y automatización.
-          </p>
-        </div>
-
-        <div class="contact-grid">
-          <article class="card contact-card">
-            <h3>Email</h3>
-            <a href="mailto:leninfonseca818@gmail.com">leninfonseca818@gmail.com</a>
-          </article>
-          <article class="card contact-card">
-            <h3>LinkedIn</h3>
-            <a href="https://www.linkedin.com/in/lenin-sebastian-f-4814762a4" target="_blank" rel="noreferrer">linkedin.com/in/lenin-sebastian-f-4814762a4</a>
-          </article>
-          <article class="card contact-card">
-            <h3>GitHub</h3>
-            <a href="https://github.com/vlasted" target="_blank" rel="noreferrer">github.com/vlasted</a>
-          </article>
-          <article class="card contact-card">
-            <h3>Ubicación</h3>
-            <p>Barcelona, España</p>
-          </article>
-        </div>
-      </div>
+    <section class="contact" id="contact">
+      <div><p class="eyebrow">Contact</p><h2>Interés profesional en Data Engineering y plataformas de datos Azure.</h2></div>
+      <div class="contact-links"><a href="https://www.leninfonseca.com" target="_blank" rel="noreferrer">Portfolio ↗</a><a href="https://github.com/vlasted" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/lenin-sebastian-fonseca-ramirez/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="mailto:leninfonseca818@gmail.com">Email ↗</a></div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>Lenin Fonseca · Junior Data Scientist · Analytics, SQL y proyectos técnicos orientados a datos.</p>
-    </div>
-  </footer>
+  <footer class="footer"><span>Lenin Fonseca</span><span>Data Engineering · Barcelona</span><span id="year"></span></footer>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
