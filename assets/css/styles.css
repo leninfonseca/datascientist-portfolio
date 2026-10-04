@@ -129,3 +129,27 @@
     padding-left: 0;
   }
 }
+
+.architecture-cta{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:34px;
+  padding:0 11px;
+  border:1px solid #35557d;
+  color:#aecdff;
+  background:rgba(101,168,255,.06);
+  font:700 10px/1 ui-monospace,SFMono-Regular,Menlo,monospace;
+  letter-spacing:.07em;
+  text-transform:uppercase;
+}
+.architecture-cta:hover{
+  color:#fff !important;
+  border-color:var(--accent);
+  background:rgba(101,168,255,.12);
+  transform:translateY(-1px);
+}
+@media(max-width:640px){
+  .project-links{width:100%;flex-wrap:wrap}
+  .architecture-cta{min-height:36px}
+}
