@@ -400,3 +400,95 @@ h1,h2,h3 { font-family: var(--display); }
   *,*::before,*::after { animation-duration:.01ms!important; transition-duration:.01ms!important; }
   .js-reveal .reveal { opacity:1!important; transform:none!important; }
 }
+
+
+/* Responsive Microsoft Credentials only.
+   Desktop: original four-cell strip.
+   Tablet: brand heading + three credentials in one row.
+   Mobile: brand heading + three full-width rows for readable certification titles. */
+.credentials .credential-badge {
+  display: block;
+  flex-shrink: 0;
+}
+.credentials .credential-copy {
+  overflow-wrap: anywhere;
+}
+@media (min-width: 781px) and (max-width: 1120px) {
+  .credentials {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .credentials .credentials-brand {
+    grid-column: 1 / -1;
+    padding: 15px 0;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .credentials .credential {
+    grid-template-columns: 40px minmax(0, 1fr);
+    gap: 10px;
+    padding: 18px 13px;
+    border-bottom: 0;
+    min-width: 0;
+  }
+  .credentials .credential-badge {
+    width: 40px;
+    height: 40px;
+  }
+  .credentials .credential:nth-child(2),
+  .credentials .credential:nth-child(3) {
+    border-right: 1px solid var(--line);
+    border-bottom: 0;
+  }
+  .credentials .credential:nth-child(3) {
+    padding-left: 13px;
+  }
+  .credentials .credential:last-child {
+    padding-right: 13px;
+    border-right: 0;
+  }
+  .credentials .credential-copy > span {
+    font-size: 11px;
+  }
+}
+@media (max-width: 780px) {
+  .credentials {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .credentials .credentials-brand {
+    grid-column: 1;
+    min-height: 55px;
+    padding: 15px 0;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .credentials .credential,
+  .credentials .credential:nth-child(2),
+  .credentials .credential:nth-child(3),
+  .credentials .credential:nth-child(4) {
+    display: grid;
+    grid-template-columns: 44px minmax(0, 1fr);
+    gap: 14px;
+    padding: 17px 8px;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .credentials .credential-badge {
+    width: 44px;
+    height: 44px;
+  }
+  .credentials .credential-copy > span {
+    font-size: 12px;
+  }
+  .credentials .credential-code strong {
+    font-size: 16px;
+  }
+  .credentials .credential em {
+    font-size: 10px;
+  }
+  .credentials .credential:last-child {
+    border-bottom: 0;
+  }
+  .credentials .credential-current::after {
+    left: 8px;
+  }
+}
