@@ -3,24 +3,29 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Portfolio de Lenin Fonseca — Data Engineering con Azure, Microsoft Fabric, Databricks, SQL, Python y arquitecturas Lakehouse.">
-  <meta name="theme-color" content="#0a0a0a">
+  <meta name="description" content="Lenin Fonseca | Portfolio de Data Engineering: Microsoft Fabric, Python, PySpark, SQL y Power BI. Casos de estudio, arquitecturas y proyectos de datos.">
+  <meta name="theme-color" content="#ffffff">
+  <meta property="og:title" content="Lenin Fonseca — Data Engineering Portfolio">
+  <meta property="og:description" content="Data pipelines, Microsoft Fabric y arquitectura de datos. Proyectos y documentación técnica.">
   <link rel="icon" type="image/png" href="assets/icons/favicon.png">
-  <title>Lenin Fonseca — Data Engineering</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
+  <title>Lenin Fonseca — Data Engineering</title>
 </head>
 <body>
-  <div class="noise" aria-hidden="true"></div>
-
-  <header class="site-header">
-    <a class="mark" href="#top" aria-label="Inicio"><span class="mark-dot"></span><span>LF / DATA</span></a>
+  <header class="site-header" id="top">
+    <a class="wordmark" href="#top" aria-label="Ir al inicio"><span>Lenin Fonseca</span></a>
     <nav class="nav" aria-label="Navegación principal">
-      <a href="#projects">Proyectos</a><a href="#profile">Perfil</a><a href="#stack">Stack</a><a href="#contact">Contacto</a>
+      <a href="#projects">Proyectos</a>
+      <a href="#architecture">Arquitectura</a>
+      <a href="#stack">Tecnologías</a>
+      <a href="#profile">Perfil</a>
     </nav>
-    <span class="header-meta">Data Engineering · Barcelona</span>
+    <a class="nav-cta" href="assets/cv/Lenin_Fonseca_CV.pdf" download>Descargar CV <span aria-hidden="true">↗</span></a>
   </header>
-
-  <main id="top">
+  <main>
     <section class="credentials" aria-label="Certificaciones Microsoft">
       <div class="credentials-brand">
         <img src="assets/icons/microsoft.svg" alt="Microsoft">
@@ -75,153 +80,163 @@
       </div>
     </section>
 
-    <section class="hero">
-      <div class="hero-copy">
-        <p class="kicker">Azure Data Engineering · Microsoft Fabric · Barcelona</p>
-        <h1>Arquitectura y plataformas de datos <span>orientadas a fiabilidad, trazabilidad y escala.</span></h1>
-        <p class="hero-lead">Portfolio centrado en ingeniería de datos end-to-end: ingesta, transformación, modelado, procesamiento batch y streaming, calidad, observabilidad y consumo analítico sobre Azure y Microsoft Fabric.</p>
+
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <p class="eyebrow">DATA ENGINEERING <span class="eyebrow-dot">/</span> BARCELONA</p>
+        <h1 id="hero-title">Ingesta, transformación<br><span>y modelado de datos.</span></h1>
+        <p class="hero-description">Desarrollo de pipelines ETL/ELT, procesamiento incremental, validaciones de calidad y modelos dimensionales con Python, SQL, PySpark y Microsoft Fabric.</p>
+        <div class="hero-specialties" aria-label="Áreas de especialización">
+          <span>DATA INGESTION</span>
+          <span>LAKEHOUSE</span>
+          <span>ANALYTICS</span>
+        </div>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#projects">Ver proyectos</a>
-          <a class="btn btn-cv" href="assets/cv/Lenin_Fonseca_CV.pdf" download>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v11m0 0 4-4m-4 4-4-4M5 17v3h14v-3"/></svg>
-            Descargar CV
-          </a>
+          <a class="button button-primary" href="#projects">Explorar proyectos <span aria-hidden="true">↗</span></a>
+          <a class="button button-secondary" href="#architecture">Ver arquitectura</a>
         </div>
+        <p class="hero-footnote">Repositorios con código, arquitectura y documentación técnica.</p>
       </div>
-
-      <aside class="hero-panel" aria-label="Resumen profesional">
-        <div class="signal-row"><span class="signal-label">Experiencia actual</span><strong>Responsable de operación de 2 laboratorios técnicos</strong></div>
-        <div class="signal-row"><span class="signal-label">Automatización</span><strong>Python · SQLite · trazabilidad · adquisición de datos</strong></div>
-        <div class="signal-row"><span class="signal-label">Especialización</span><strong>Azure · Fabric · Databricks · Data Pipelines</strong></div>
-        <div class="signal-row"><span class="signal-label">Formación</span><strong>FP Superior DAM · Ingeniería de datos</strong></div>
-        <div class="micro-pipeline" aria-hidden="true"><span>source</span><i></i><span>ingest</span><i></i><span>transform</span><i></i><span>serve</span></div>
-      </aside>
-    </section>
-
-    <section class="section intro" id="projects">
-      <div class="section-heading"><p class="eyebrow">Selected work</p><h2>Proyectos diseñados alrededor de problemas y arquitecturas de datos reales.</h2></div>
-      <p class="section-copy">La selección cubre procesamiento batch y streaming, arquitectura Lakehouse, modelado dimensional, Microsoft Fabric, gobierno, calidad y DataOps. Cada proyecto documenta decisiones técnicas, flujo de datos, operación y criterios de diseño.</p>
-    </section>
-
-    <section class="project-list" aria-label="Proyectos de Data Engineering">
-      <article class="project project-featured">
-        <div class="project-index">01</div>
-        <div class="project-main">
-          <div class="project-title-row"><div><p class="project-type">Azure · Batch · Lakehouse · Open Data</p><h3>Barcelona Urban Mobility Data Platform</h3></div><span class="status">End-to-end</span></div>
-          <p class="project-summary">Plataforma de datos para integrar fuentes públicas de movilidad, meteorología e incidencias mediante cargas históricas e incrementales, transformarlas sobre una arquitectura Medallion y publicar capas analíticas consistentes.</p>
-          <div class="architecture" aria-label="Arquitectura del proyecto"><span>APIs / CSV / JSON</span><b>→</b><span>Azure Data Factory</span><b>→</b><span>ADLS / Delta</span><b>→</b><span>Databricks + PySpark</span><b>→</b><span>Fabric / SQL / BI</span></div>
-          <div class="project-details"><div><span>Ingesta</span><p>Full load inicial, cargas incrementales, watermarks, control de duplicados y evolución de esquema.</p></div><div><span>Procesamiento</span><p>Bronze, Silver y Gold con Delta MERGE, particionado, validaciones y transformaciones PySpark.</p></div><div><span>Operación</span><p>Monitorización de ejecuciones, retries, calidad de datos, trazabilidad y preparación para consumo analítico.</p></div></div>
-          <div class="project-footer"><div class="tech"><span>ADF</span><span>ADLS</span><span>Databricks</span><span>PySpark</span><span>Delta Lake</span><span>Fabric</span><span>SQL</span></div><div class="project-links"><a href="https://github.com/leninfonseca/barcelona-urban-mobility-data-platform" target="_blank" rel="noreferrer">Repositorio ↗</a><a class="architecture-cta" href="https://github.com/leninfonseca/barcelona-urban-mobility-data-platform/blob/main/architecture/README.md" target="_blank" rel="noreferrer">Arquitectura completa ↗</a></div></div>
-        </div>
-      </article>
-
-      <article class="project">
-        <div class="project-index">02</div>
-        <div class="project-main">
-          <div class="project-title-row"><div><p class="project-type">Fabric · Dimensional Modeling · Customer 360</p><h3>Customer 360 &amp; Revenue Data Product</h3></div><span class="status">Enterprise data</span></div>
-          <p class="project-summary">Producto de datos orientado a integrar clientes, pedidos, facturación, suscripciones y soporte en una plataforma analítica común, con historial de cambios y un modelo dimensional preparado para reporting y análisis.</p>
-          <div class="architecture architecture-short"><span>CRM / Orders / Billing / Support</span><b>→</b><span>CDC / Watermarks</span><b>→</b><span>OneLake / Lakehouse</span><b>→</b><span>Warehouse</span><b>→</b><span>Semantic Model</span></div>
-          <div class="project-details"><div><span>Modelado</span><p>Star schema, granularidad definida, claves surrogate, dimensiones conformadas y SCD Type 2.</p></div><div><span>Plataforma</span><p>Lakehouse y Warehouse con responsabilidades diferenciadas, capas Gold y cargas incrementales.</p></div><div><span>Consumo</span><p>Modelo semántico en Fabric, Direct Lake, RLS y métricas de negocio sobre una única versión del dato.</p></div></div>
-          <div class="project-footer"><div class="tech"><span>Fabric</span><span>OneLake</span><span>Lakehouse</span><span>Warehouse</span><span>SQL</span><span>Direct Lake</span><span>Power BI</span></div><div class="project-links"><a href="https://github.com/leninfonseca/customer-360-revenue-data-product" target="_blank" rel="noreferrer">Repositorio ↗</a><a class="architecture-cta" href="https://github.com/leninfonseca/customer-360-revenue-data-product/blob/main/architecture/README.md" target="_blank" rel="noreferrer">Arquitectura completa ↗</a></div></div>
-        </div>
-      </article>
-
-      <article class="project">
-        <div class="project-index">03</div>
-        <div class="project-main">
-          <div class="project-title-row"><div><p class="project-type">IoT · Streaming · Lakehouse · Real-Time</p><h3>Real-Time IoT Telemetry Lakehouse</h3></div><span class="status">Event-driven</span></div>
-          <p class="project-summary">Lakehouse de telemetría IoT orientado a eventos para ingerir datos de dispositivos en baja latencia, conservar histórico en Delta y generar indicadores casi en tiempo real para análisis operacional.</p>
-          <div class="architecture architecture-short"><span>IoT Devices</span><b>→</b><span>Event Hubs / Eventstream</span><b>→</b><span>OneLake / Delta</span><b>→</b><span>PySpark Streaming</span><b>→</b><span>SQL / Real-Time Analytics</span></div>
-          <div class="project-details"><div><span>Streaming</span><p>Ingesta continua, ventanas temporales, eventos tardíos y agregaciones sobre tiempo de evento.</p></div><div><span>Lakehouse</span><p>Persistencia histórica en Delta, capas Bronze/Silver/Gold y procesamiento incremental con PySpark.</p></div><div><span>Operación</span><p>Seguimiento de latencia, errores, throughput, calidad y métricas listas para consumo analítico.</p></div></div>
-          <div class="project-footer"><div class="tech"><span>Event Hubs</span><span>Eventstream</span><span>Fabric</span><span>PySpark</span><span>Delta Lake</span><span>SQL</span></div><div class="project-links"><a href="https://github.com/leninfonseca/real-time-iot-telemetry-lakehouse" target="_blank" rel="noreferrer">Repositorio ↗</a><a class="architecture-cta" href="https://github.com/leninfonseca/real-time-iot-telemetry-lakehouse/blob/main/architecture/README.md" target="_blank" rel="noreferrer">Arquitectura completa ↗</a></div></div>
-        </div>
-      </article>
-
-      <article class="project project-muted">
-        <div class="project-index">04</div>
-        <div class="project-main">
-          <div class="project-title-row"><div><p class="project-type">Marketing Data · Attribution · Analytics Engineering</p><h3>Marketing Attribution &amp; Spend Optimization</h3></div><span class="status status-alt">Data product</span></div>
-          <p class="project-summary">Producto de datos para integrar inversión y rendimiento de múltiples canales de marketing, construir atribución multicanal y preparar una capa analítica para evaluar eficiencia y optimizar presupuesto.</p>
-          <div class="architecture architecture-short"><span>Ads / CRM / E-commerce</span><b>→</b><span>Fabric Pipelines</span><b>→</b><span>OneLake / Lakehouse</span><b>→</b><span>SQL / PySpark Attribution</span><b>→</b><span>Gold / Semantic Model</span></div>
-          <div class="project-details"><div><span>Ingesta</span><p>Integración de campañas, gasto, conversiones, CRM y ventas con cargas incrementales y normalización de fuentes.</p></div><div><span>Atribución</span><p>Modelos de atribución multicanal, journeys, ROAS, CAC y análisis del impacto de cada canal.</p></div><div><span>Optimización</span><p>Capa Gold con KPIs y escenarios para comparar eficiencia y orientar la distribución del presupuesto.</p></div></div>
-          <div class="project-footer"><div class="tech"><span>Fabric</span><span>OneLake</span><span>PySpark</span><span>SQL</span><span>Data Pipelines</span><span>Power BI</span></div><div class="project-links"><a href="https://github.com/leninfonseca/marketing-attribution-spend-optimization" target="_blank" rel="noreferrer">Repositorio ↗</a><a class="architecture-cta" href="https://github.com/leninfonseca/marketing-attribution-spend-optimization/blob/main/architecture/README.md" target="_blank" rel="noreferrer">Arquitectura completa ↗</a></div></div>
-        </div>
-      </article>
-    </section>
-
-    <section class="section profile" id="profile">
-      <div class="section-heading"><p class="eyebrow">Profile</p><h2>Experiencia técnica aplicada a ingeniería de datos.</h2></div>
-      <div class="profile-grid">
-        <div class="profile-copy"><p>Actualmente soy responsable de la operación de dos laboratorios de instrumentación y metrología, donde coordino cargas de trabajo y he desarrollado soluciones internas con Python y SQLite para trazabilidad, registro de equipos, automatización documental y adquisición estructurada de datos.</p><p>Paralelamente curso el Grado Superior en Desarrollo de Aplicaciones Multiplataforma y formación especializada en datos, con una orientación profesional hacia Data Engineering en el ecosistema Microsoft Azure y Fabric.</p></div>
-        <dl class="profile-facts"><div><dt>Ubicación</dt><dd>Barcelona, España</dd></div><div><dt>Especialización</dt><dd>Azure Data Engineering</dd></div><div><dt>Formación</dt><dd>FP Superior DAM · Data</dd></div><div><dt>Experiencia</dt><dd>Operación técnica · Automatización · Trazabilidad</dd></div></dl>
+      <div class="hero-art">
+        <img src="assets/illustrations/hero-isometric.svg" alt="Arquitectura isométrica con nodos de API, base de datos Delta Lake, Python, SQL y analítica" width="840" height="665">
       </div>
     </section>
 
-    <section class="section stack" id="stack">
-      <div class="section-heading">
-        <p class="eyebrow">Toolbox</p>
-        <h2>Tecnologías y conceptos aplicados en los proyectos.</h2>
+    <section class="showcase section" id="projects" aria-labelledby="showcase-title">
+      <div class="section-heading centered">
+        <p class="eyebrow">01 / PROYECTO DESTACADO</p>
+        <h2 id="showcase-title">Históricos incrementales.<br>Modelo analítico y reporting.</h2>
+        <p>Barcelona Urban Mobility Data Platform: una solución end-to-end en Microsoft Fabric basada en datos públicos de disponibilidad de Bicing.</p>
       </div>
-
-      <div class="stack-board">
-        <div class="stack-group">
-          <div class="stack-head">
-            <span>Languages &amp; Query</span>
+      <div class="showcase-visual">
+        <div class="showcase-window">
+          <div class="window-header">
+            <span class="window-brand"><img class="window-brand-logo" src="assets/icons/fabric.png" alt="Microsoft Fabric" width="23" height="23"> BARCELONA / URBAN MOBILITY</span>
+            <span>POWER BI — PROJECT DEMO</span>
           </div>
-          <div class="stack-item"><img class="stack-icon" src="https://cdn.simpleicons.org/python" alt="Python" loading="lazy" onerror="this.style.display='none'"><strong>Python</strong></div>
-          <div class="stack-item"><strong>SQL</strong></div>
-          <div class="stack-item"><strong>KQL</strong></div>
+          <div class="dashboard-frame">
+            <a href="https://github.com/leninfonseca/barcelona-urban-mobility-data-platform" target="_blank" rel="noopener noreferrer" aria-label="Abrir proyecto Barcelona Urban Mobility">
+              <img src="https://raw.githubusercontent.com/leninfonseca/barcelona-urban-mobility-data-platform/main/assets/demos/project-barcelona.gif" alt="Demostración real del dashboard de disponibilidad de Bicing en Power BI" loading="lazy">
+            </a>
+          </div>
         </div>
-
-        <div class="stack-group">
-          <div class="stack-head">
-            <img class="stack-icon" src="https://cdn.simpleicons.org/microsoftazure" alt="Microsoft Azure" loading="lazy" onerror="this.style.display='none'">
-            <span>Azure Platform</span>
-          </div>
-          <div class="stack-item"><img class="stack-icon" src="https://static.docs.com/ui/media/product/azure/data-factory.svg" alt="Azure Data Factory" loading="lazy" onerror="this.style.display='none'"><strong>Data Factory</strong></div>
-          <div class="stack-item"><img class="stack-icon" src="https://static.docs.com/ui/media/product/azure/storage-accounts.svg" alt="Azure Data Lake Storage Gen2" loading="lazy" onerror="this.style.display='none'"><strong>ADLS Gen2</strong></div>
-          <div class="stack-item"><img class="stack-icon" src="https://static.docs.com/ui/media/product/azure/sql-database.svg" alt="Azure SQL Database" loading="lazy" onerror="this.style.display='none'"><strong>Azure SQL</strong></div>
+      </div>
+      <div class="feature-grid">
+        <div class="feature">
+          <div class="feature-icon"><svg viewBox="0 0 36 36" fill="none" aria-hidden="true"><ellipse cx="18" cy="9" rx="11" ry="5"/><path d="M7 9v18c0 2.8 5 5 11 5s11-2.2 11-5V9M7 18c0 2.8 5 5 11 5s11-2.2 11-5"/></svg></div>
+          <div><h3>Histórico reproducible</h3><p>Snapshots inmutables y procesamiento incremental para conservar observaciones a lo largo del tiempo.</p></div>
         </div>
-
-        <div class="stack-group">
-          <div class="stack-head">
-            <span>Processing</span>
-          </div>
-          <div class="stack-item"><img class="stack-icon" src="https://static.docs.com/ui/media/product/azure/databricks.svg" alt="Azure Databricks" loading="lazy" onerror="this.style.display='none'"><strong>Databricks</strong></div>
-          <div class="stack-item"><img class="stack-icon" src="https://cdn.simpleicons.org/apachespark" alt="Apache Spark" loading="lazy" onerror="this.style.display='none'"><strong>PySpark / Spark</strong></div>
-          <div class="stack-item"><strong>Delta Lake</strong></div>
+        <div class="feature">
+          <div class="feature-icon"><svg viewBox="0 0 36 36" fill="none" aria-hidden="true"><path d="M6 10h11v9H6zM19 19h11v9H19zM17 14h7v5M14 19v8h5"/></svg></div>
+          <div><h3>Transformaciones controladas</h3><p>PySpark, Delta MERGE y validaciones para preparar los datos de las capas Silver y Gold.</p></div>
         </div>
-
-        <div class="stack-group">
-          <div class="stack-head">
-            <img class="stack-icon" src="https://debruyn.dev/2026/all-microsoft-fabric-icons-for-diagramming-2026-edition/fabric.svg" alt="Microsoft Fabric" loading="lazy" onerror="this.style.display='none'">
-            <span>Microsoft Fabric</span>
-          </div>
-          <div class="stack-item"><img class="stack-icon" src="https://debruyn.dev/2026/all-microsoft-fabric-icons-for-diagramming-2026-edition/one_lake.svg" alt="Microsoft OneLake" loading="lazy" onerror="this.style.display='none'"><strong>OneLake</strong></div>
-          <div class="stack-item"><strong>Lakehouse</strong></div>
-          <div class="stack-item"><strong>Warehouse</strong></div>
-          <div class="stack-item"><img class="stack-icon" src="https://static.docs.com/ui/media/product/azure/power-bi.svg" alt="Power BI" loading="lazy" onerror="this.style.display='none'"><strong>Power BI / Direct Lake</strong></div>
-        </div>
-
-        <div class="stack-group">
-          <div class="stack-head">
-            <span>Engineering</span>
-          </div>
-          <div class="stack-item"><strong>ETL / ELT</strong></div>
-          <div class="stack-item"><img class="stack-icon" src="https://cdn.simpleicons.org/git" alt="Git" loading="lazy" onerror="this.style.display='none'"><strong>Git / CI-CD</strong></div>
-          <div class="stack-item"><strong>Data Quality</strong></div>
-          <div class="stack-item"><strong>Observability</strong></div>
+        <div class="feature">
+          <div class="feature-icon"><svg viewBox="0 0 36 36" fill="none" aria-hidden="true"><path d="M6 30V6M6 30h24M12 24l6-7 5 4 7-12M27 9h3v3"/></svg></div>
+          <div><h3>Capa analítica</h3><p>Modelo dimensional, consultas SQL y medidas DAX para el dashboard de Power BI.</p></div>
         </div>
       </div>
     </section>
 
-    <section class="contact" id="contact">
-      <div><p class="eyebrow">Contact</p><h2>Interés profesional en Data Engineering y plataformas de datos Azure.</h2></div>
-      <div class="contact-links"><a href="https://www.leninfonseca.com" target="_blank" rel="noreferrer">Portfolio ↗</a><a href="https://github.com/leninfonseca" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/lenin-sebastian-fonseca-ramirez/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="mailto:leninfonseca818@gmail.com">Email ↗</a></div>
+    <section class="architecture-section section" id="architecture" aria-labelledby="architecture-title">
+      <div class="architecture-header">
+        <div><p class="eyebrow">02 / ARQUITECTURA</p><h2 id="architecture-title">Del dato de origen<br>al modelo analítico.</h2></div>
+        <p>El flujo del proyecto Barcelona Urban Mobility se organiza en etapas diferenciadas: captura, persistencia, transformación incremental y consumo analítico.</p>
+      </div>
+      <div class="architecture-visual">
+        <img src="assets/illustrations/medallion-architecture.svg" alt="Flujo visual: REST API Bicing, Bronze OneLake, Silver PySpark Delta, Gold modelo dimensional y Power BI" width="1180" height="405" loading="lazy">
+      </div>
+      <div class="architecture-links">
+        <span>MICROSOFT FABRIC / ONELAKE / DELTA LAKE / POWER BI</span>
+        <a href="https://github.com/leninfonseca/barcelona-urban-mobility-data-platform/tree/main/architecture" target="_blank" rel="noopener noreferrer">Ver documentación de arquitectura ↗</a>
+      </div>
+    </section>
+
+    <section class="project-section section" aria-labelledby="project-list-title">
+      <div class="project-heading">
+        <div><p class="eyebrow">03 / CASOS DE ESTUDIO</p><h2 id="project-list-title">Proyectos seleccionados.</h2></div>
+        <p>Un proyecto implementado y dos plataformas planificadas para ampliar el alcance técnico en procesamiento batch, orquestación y streaming.</p>
+      </div>
+      <div class="project-list">
+        <article class="project-card project-card--featured">
+          <div class="project-number">01 <span>IMPLEMENTADO</span></div>
+          <div class="project-main">
+            <p class="project-category">MICROSOFT FABRIC / BATCH / LAKEHOUSE</p>
+            <h3>Barcelona Urban<br>Mobility Data Platform</h3>
+            <p class="project-description">Pipeline end-to-end con datos públicos de Bicing. Captura snapshots JSON desde API, mantiene históricos incrementales con PySpark y Delta Lake y modela información para análisis con SQL y Power BI.</p>
+            <div class="project-tags"><span>Fabric Data Factory</span><span>OneLake</span><span>PySpark</span><span>Delta Lake</span><span>SQL</span><span>Power BI</span></div>
+            <div class="project-actions"><a href="https://github.com/leninfonseca/barcelona-urban-mobility-data-platform" target="_blank" rel="noopener noreferrer">Ver repositorio ↗</a><a href="https://github.com/leninfonseca/barcelona-urban-mobility-data-platform/tree/main/docs" target="_blank" rel="noopener noreferrer">Documentación ↗</a></div>
+          </div>
+          <div class="project-graphic" aria-hidden="true">
+            <span class="graphic-label">DATA FLOW / 01</span>
+            <div class="mini-stack"><div class="mini-plane plane-top"><span>GOLD</span></div><div class="mini-plane plane-middle"><span>SILVER</span></div><div class="mini-plane plane-bottom"><span>BRONZE</span></div></div>
+            <span class="graphic-footer">API → BRONZE → SILVER → GOLD</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-number">02 <span>PLANIFICADO</span></div>
+          <div class="project-main">
+            <p class="project-category">POSTGRESQL / DBT / AIRFLOW / DOCKER</p>
+            <h3>E-commerce Orders,<br>Inventory &amp; Logistics</h3>
+            <p class="project-description">Plataforma de datos con fuentes sintéticas de pedidos, inventario y logística. Diseño orientado a cargas incrementales, datos tardíos, deduplicación, conciliación y pruebas automáticas de calidad.</p>
+            <div class="project-tags"><span>Python</span><span>PostgreSQL</span><span>dbt</span><span>Airflow</span><span>Parquet</span><span>Docker</span><span>GitHub Actions</span></div>
+            <p class="project-note">Arquitectura planificada · Sin demostración publicada todavía.</p>
+          </div>
+          <div class="project-graphic project-graphic--orders" aria-hidden="true">
+            <span class="graphic-label">DATA FLOW / 02</span>
+            <div class="order-diagram"><div><strong>ORDERS</strong><span>DB</span></div><div><strong>STOCK</strong><span>CSV</span></div><div><strong>LOGISTICS</strong><span>API</span></div><i></i><div class="order-warehouse"><strong>WAREHOUSE</strong><span>SQL / DBT</span></div></div>
+            <span class="graphic-footer">INGEST → VALIDATE → MODEL</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-number">03 <span>PLANIFICADO</span></div>
+          <div class="project-main">
+            <p class="project-category">KAFKA / PYSPARK STREAMING / DELTA LAKE</p>
+            <h3>Industrial IoT<br>Real-Time Data Platform</h3>
+            <p class="project-description">Plataforma propuesta para telemetría industrial simulada en tiempo real: productores Kafka, procesamiento con PySpark Structured Streaming, capas Delta y controles de calidad, observabilidad y despliegue reproducible.</p>
+            <div class="project-tags"><span>Python</span><span>Kafka</span><span>PySpark Streaming</span><span>Delta Lake</span><span>Docker</span><span>Kubernetes</span></div>
+            <p class="project-note">Arquitectura planificada · Sin demostración publicada todavía.</p>
+          </div>
+          <div class="project-graphic project-graphic--iot" aria-hidden="true">
+            <span class="graphic-label">DATA FLOW / 03</span>
+            <svg class="telemetry" viewBox="0 0 350 190" fill="none"><path d="M7 99H48L63 75L83 126L103 47L122 142L147 77L163 99H203L221 72L235 114L254 91H342" stroke="#04A98B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M7 99H342" stroke="#A4E7D9" stroke-dasharray="3 8"/><circle cx="103" cy="47" r="6" fill="#08C7A6"/><circle cx="221" cy="72" r="6" fill="#08C7A6"/></svg>
+            <span class="graphic-footer">SENSORS → KAFKA → STREAMING</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="stack-section section" id="stack">
+      <div class="stack-header"><div><p class="eyebrow">04 / TECHNOLOGIES</p><h2>Herramientas y tecnologías.</h2></div><p>Tecnologías utilizadas en proyectos y herramientas incluidas en el itinerario de formación, según el alcance de cada caso.</p></div>
+      <div class="stack-grid">
+        <div class="stack-column"><span class="stack-heading">01 / LANGUAGES</span><h3>Lenguajes y bases de datos</h3><p>Python · SQL · PySpark · Java · PostgreSQL · MySQL</p></div>
+        <div class="stack-column"><span class="stack-heading">02 / DATA PLATFORMS</span><h3>Plataformas</h3><p>Microsoft Fabric · OneLake · Delta Lake · Azure · Power BI</p></div>
+        <div class="stack-column"><span class="stack-heading">03 / ENGINEERING</span><h3>Orquestación y despliegue</h3><p>Git · Docker · Airflow · dbt · GitHub Actions</p></div>
+        <div class="stack-column"><span class="stack-heading">04 / STREAMING</span><h3>Procesamiento en tiempo real</h3><p>Apache Kafka · Spark Structured Streaming · Kubernetes</p></div>
+      </div>
+    </section>
+
+    <section class="profile-section section" id="profile">
+      <div><p class="eyebrow">05 / PERFIL</p><h2>Experiencia técnica<br>y desarrollo de datos.</h2></div>
+      <div class="profile-body">
+        <p>Responsable de la operación de dos laboratorios de instrumentación y metrología. Experiencia profesional en trazabilidad, adquisición de datos y automatización de tareas mediante Python, SQLite y PowerShell.</p>
+        <p>En formación en Desarrollo de Aplicaciones Multiplataforma (DAM), con especialización progresiva en ingeniería de datos y el ecosistema Microsoft Azure y Fabric.</p>
+        <div class="profile-meta"><span>BARCELONA, ESPAÑA</span><span>DATA ENGINEERING / ANALYTICS</span></div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div><p class="eyebrow">06 / CONTACT</p><h2>Perfil orientado a<br><span>Data Engineering.</span></h2><p>Interés profesional en posiciones junior de ingeniería de datos, integración de fuentes, procesamiento con PySpark y modelado analítico en Azure y Microsoft Fabric.</p></div>
+      <div class="contact-actions">
+        <a class="contact-primary" href="mailto:leninfonseca818@gmail.com">Enviar email <span>↗</span></a>
+        <a href="https://github.com/leninfonseca" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a>
+        <a href="https://www.linkedin.com/in/lenin-sebastian-fonseca-ramirez/" target="_blank" rel="noopener noreferrer">LinkedIn <span>↗</span></a>
+        <a href="assets/cv/Lenin_Fonseca_CV.pdf" download>Descargar CV <span>↗</span></a>
+      </div>
     </section>
   </main>
-
-  <footer class="footer"><span>Lenin Fonseca</span><span>Data Engineering · Barcelona</span><span id="year"></span></footer>
+  <footer class="footer"><span>LENIN FONSECA</span><span>DATA ENGINEERING / BARCELONA</span><span id="year"></span></footer>
   <script src="assets/js/main.js"></script>
 </body>
 </html>

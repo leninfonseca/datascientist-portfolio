@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="665" viewBox="0 0 840 665" role="img" aria-labelledby="title description">
+<title id="title">Infraestructura de datos</title>
+<desc id="description">Ilustración vectorial isométrica de componentes API, Delta Lake, análisis y Power BI conectados mediante un flujo de datos.</desc>
+<defs>
+<linearGradient id="mintSide" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#55E9CD"/><stop offset="1" stop-color="#008F83"/></linearGradient>
+<linearGradient id="mintTop" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F5FFFC"/><stop offset="1" stop-color="#D7FBF2"/></linearGradient>
+<linearGradient id="graySide" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#E0E7E7"/><stop offset="1" stop-color="#7A8385"/></linearGradient>
+<linearGradient id="fade" x1="0" y1="0" x2="1" y2="0"><stop stop-color="white" stop-opacity="0"/><stop offset=".35" stop-color="white" stop-opacity=".7"/><stop offset="1" stop-color="white"/></linearGradient>
+<pattern id="plus" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M9 12H15M12 9V15" stroke="#12C6AB" stroke-width="1.4" stroke-linecap="round" opacity=".54"/></pattern>
+<pattern id="dots" width="7" height="7" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".9" fill="#056C66" opacity=".24"/></pattern>
+<filter id="shadow" x="-30%" y="-30%" width="180%" height="190%"><feGaussianBlur stdDeviation="15"/></filter>
+</defs>
+
+<rect x="100" y="20" width="740" height="625" fill="url(#plus)" mask="url(#crossMask)"/>
+<defs><linearGradient id="down" x1="0" y1="0" x2="0" y2="1"><stop stop-color="white"/><stop offset=".99" stop-color="white" stop-opacity=".6"/></linearGradient><mask id="crossMask"><rect x="100" y="20" width="740" height="625" fill="url(#fade)"/></mask></defs>
+<path d="M311 206 V257 Q311 270 332 283 L396 322" stroke="#151C1E" stroke-width="2.5" fill="none"/>
+<path d="M529 447 L650 519" stroke="#151C1E" stroke-width="2.5" fill="none"/>
+<path d="M418 427 L277 508" stroke="#151C1E" stroke-width="2.5" fill="none"/>
+<path d="M395 321 L405 321 M641 520 L652 520 M278 507 L265 507" stroke="#13C7AB" stroke-width="5" stroke-linecap="round"/>
+<ellipse cx="311" cy="223" rx="112" ry="29" fill="#0D302B" opacity=".12" filter="url(#shadow)"/>
+<ellipse cx="534" cy="472" rx="180" ry="44" fill="#0D302B" opacity=".15" filter="url(#shadow)"/>
+<ellipse cx="682" cy="567" rx="100" ry="26" fill="#0D302B" opacity=".11" filter="url(#shadow)"/>
+<ellipse cx="249" cy="551" rx="106" ry="23" fill="#0D302B" opacity=".11" filter="url(#shadow)"/>
+<!-- API tile -->
+<path d="M204 176L305 119L405 176L305 233Z" fill="#fff" stroke="#253433" stroke-width="2"/>
+<path d="M204 176L305 233V269L204 211Z" fill="url(#graySide)" stroke="#253433" stroke-width="2"/>
+<path d="M305 233L405 176V211L305 269Z" fill="#CED5D4" stroke="#253433" stroke-width="2"/>
+<path d="M204 176L305 119L405 176L305 233Z" fill="#fff" stroke="#253433" stroke-width="2"/>
+<g transform="translate(305 172)" fill="none" stroke="#687B78" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M-20-1H-8L-2-13H14M-21 9H-5L4 17H18"/><circle cx="-23" cy="-1" r="4"/><circle cx="18" cy="-13" r="4"/><circle cx="22" cy="17" r="4"/></g>
+<!-- lower left terminal / source tile -->
+<path d="M135 475L236 419L337 475L236 532Z" fill="#FFF" stroke="#283432" stroke-width="2"/>
+<path d="M135 475L236 532V557L135 501Z" fill="url(#graySide)" stroke="#283432" stroke-width="2"/>
+<path d="M236 532L337 475V501L236 557Z" fill="#CFD4D3" stroke="#283432" stroke-width="2"/>
+<path d="M135 475L236 419L337 475L236 532Z" fill="#fff" stroke="#283432" stroke-width="2"/>
+<g stroke="#65716D" fill="none" stroke-width="3" stroke-linecap="round"><path d="M212 467L233 479L212 491M242 481L261 470"/><circle cx="279" cy="469" r="5"/></g>
+<!-- lower right analytics tile -->
+<path d="M579 516L680 460L779 516L680 574Z" fill="#fff" stroke="#253433" stroke-width="2"/>
+<path d="M579 516L680 574V601L579 544Z" fill="url(#graySide)" stroke="#253433" stroke-width="2"/>
+<path d="M680 574L779 516V544L680 601Z" fill="#C9D1CF" stroke="#253433" stroke-width="2"/>
+<path d="M579 516L680 460L779 516L680 574Z" fill="#fff" stroke="#253433" stroke-width="2"/>
+<g fill="none" stroke="#657A76" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M656 537V517M675 547V504M696 535V492M714 525V510"/><path d="M644 541L677 554L718 528"/></g>
+<!-- featured Delta main tile -->
+<path d="M346 357L519 258L694 357L519 458Z" fill="#02C4A7" opacity=".26"/>
+<path d="M346 339L519 242L694 339L519 437Z" fill="#F8FFFD" stroke="#0DAE96" stroke-width="3"/>
+<path d="M346 339L519 437V507L346 410Z" fill="url(#mintSide)" stroke="#078F7D" stroke-width="3"/>
+<path d="M519 437L694 339V410L519 507Z" fill="#1BBDA9" stroke="#078F7D" stroke-width="3"/>
+<path d="M346 339L519 242L694 339L519 437Z" fill="url(#mintTop)" stroke="#0DAE96" stroke-width="3"/>
+<path d="M352 391L513 480V502L351 410Z" fill="url(#dots)" opacity=".9"/>
+<path d="M527 480L689 389V411L527 501Z" fill="url(#dots)" opacity=".7"/>
+<!-- database mark with isometric orientation -->
+<g fill="none" stroke="#0D3A35" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+<path d="M481 321C500 307 539 304 563 318C586 332 572 349 547 356C518 365 480 355 475 339C473 333 475 326 481 321Z"/>
+<path d="M475 339V357C480 376 521 387 550 374C566 368 575 360 575 352V335"/>
+<path d="M475 359V378C483 394 520 405 549 392C568 384 575 377 575 370"/>
+<path d="M491 356C515 371 551 371 571 354"/>
+</g>
+<g font-family="Arial,Helvetica,sans-serif" font-weight="700" text-anchor="middle">
+<text x="477" y="182" font-size="14" fill="#627571" letter-spacing="1">DATA SOURCE</text>
+<text x="494" y="545" font-size="18" fill="#07584F" letter-spacing="1.8">DELTA LAKE</text>
+<text x="713" y="627" font-size="14" fill="#647674" letter-spacing="1">ANALYTICS</text>
+<text x="230" y="589" font-size="14" fill="#647674" letter-spacing="1">PYTHON / SQL</text>
+</g>
+</svg>
